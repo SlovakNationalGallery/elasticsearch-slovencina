@@ -40,10 +40,6 @@ Príklad, ako si nastaviť analyzer:
           "type": "lemmagen",
           "lexicon": "sk"
         },
-        "lemmagen_filter_sk": {
-          "type": "lemmagen",
-          "lexicon": "sk"
-        },
         "sk_SK" : {
           "type" : "hunspell",
           "locale" : "sk_SK",
