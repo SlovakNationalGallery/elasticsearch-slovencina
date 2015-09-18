@@ -1,18 +1,21 @@
 # Podpora slovenčiny pre ElasticSearch
 
 Repozitár pozostáva zo:
+
 * __stop-words__ (pôvodný zdroj [code.google.com/p/stop-words/](https://code.google.com/p/stop-words/))
 * __OpenThesaurus-SK__ - synonymický slovník vo formáte pre ElasticSearch / SOLR (prekonvertované z originálneho [OpenThesaurus-SK](http://sk-spell.sk.cx/thesaurus))
 * __hunspell-sk__ pripravený pre `hunspell token filter` (zdroj [hunspell-sk](http://www.sk-spell.sk.cx/hunspell-sk))
 
 Pre lepšie výsledky pri lematizácii odporúčame použiť [LemmaGen](https://github.com/vhyza/elasticsearch-analysis-lemmagen) _(licencia umožňuje použitie len v nekomerčných projektoch)_
 
-Vyskúšať môžete aj [hunspell slovník od Essential Data](https://github.com/essential-data/hunspell-sk/releases/tag/1.1)
+Do pozornosti dávame aj [hunspell slovník od Essential Data](https://github.com/essential-data/hunspell-sk/releases/tag/1.1)
 
+Implementáciu projektu (vyhľadávanie s podporou skloňovania / časovania / synoným) nájdete na [www.webumenia.sk](http://www.webumenia.sk). 
 
 ## Požiadavky a inštalácia
 
 Otestované pre [ElasticSearch v1.3.4](https://www.elastic.co/downloads/elasticsearch)
+
 Synonymický slovník je vo formáte použitelnom aj pre SOLR (zatiaľ netestované).
 
 Obsah repozitáru stačí nakopírovať do priečinku `config/` vo vašej inštalácií ElasticSearch
@@ -88,10 +91,20 @@ Príklad, ako si nastaviť analyzer:
 ```
 pozn. _tento príklad používa [LemmaGen](https://github.com/vhyza/elasticsearch-analysis-lemmagen)_
 
+
+## Odkazy a ďaľšie zdroje
+
+* implementované vyhľadávanie je možné otestovať si na [www.webumenia.sk](http://www.webumenia.sk)
+* prezentácia *Elasticsearch po slovensky* na webelement [slideshare](http://www.slideshare.net/lab_SNG/elasticsearch-po-slovensky) a [youtube](https://www.youtube.com/watch?v=Y78-4fLK1_M)
+* dvojdielny seriál o podpore češtiny (a slovenčiny) na zdrojak.cz
+( [prvý](https://www.zdrojak.cz/clanky/elasticsearch-vyhledavame-cesky/) a  [druhý diel]( https://www.zdrojak.cz/clanky/elasticsearch-vyhledavame-hezky-cesky-ii-a-taky-slovensky/) )
+* slovenská podpora pre ES od Essential Data [elasticsearch-sk](https://github.com/essential-data/elasticsearch-sk)
+
+*(privítame tip na ďaľšie relevantné odkazy)*
+
 ## Správa projektu
 
 Tento projekt spravuje [lab.SNG](http://lab.sng.sk). Ak máte akékoľvek otázky, vytvorte _issue_ priamo tu alebo nám napíšte na [lab@sng.sk](mailto:lab@sng.sk).
-
 
 ## Licencia
 
